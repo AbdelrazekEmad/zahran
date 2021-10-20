@@ -36,7 +36,7 @@
                         <li class="title_description">الوزة وبنتها🐱‍🐉</li>
                         <li class="description">هيجننوا طفلك بحركاتهم وأغانيهم وشكلهم الكيوت👈</li>
                     </ul>
-                    <button>اشتريها من هنا واحصل ع خصم كبير</button>
+                    <a href="#checkout_form"><button>اشتريها من هنا واحصل ع خصم كبير</button></a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     <h3>بروچكتور الرسم⬇️ هيعرض لطفلك صور يلونها أو يرسمها هيمكن أطفالك من الرسم بطريقة ذكية</h3>
                 </div>
             </div>
-            <button> 🔥استمتع بالعرض من هنا</button>
+            <a href="#checkout_form"><button> 🔥استمتع بالعرض من هنا</button></a>
         </div>
     </div>
     <!-- End image gif section  -->
@@ -79,7 +79,7 @@
                             البابلز الجديد</li>
                     </ul>
                 </div>
-                <button> ❤ العرض محدودة جدا أستمتع بية من هنا</button>
+                <a href="#checkout_form"><button> ❤ العرض محدودة جدا أستمتع بية من هنا</button></a>
             </div>
         </div>
     </div>
@@ -96,7 +96,7 @@
                     <p>العرض الشديد<br>
                         استمتع ببرجيكتور الرسم و الصبارة واختار هديتك الثالثة على مزاجك</p>
                 </div>
-                <button>العرض تحفة الحقة من هنا</button>
+                <a href="#checkout_form"><button>العرض تحفة الحقة من هنا</button></a>
             </div>
         </div>
     </div>
@@ -113,11 +113,73 @@
                 <img src="images/4.jpg" alt="">
                 <img src="images/5.jpg" alt="">
             </div>
-            <button>دلع طفلك من هنا </button>
+            <a href="#checkout_form"><button>دلع طفلك من هنا </button></a>
         </div>
     </div>
 
     <!-- End images section -->
+
+    <!-- Start checkout form  -->
+
+    <div class="checkout_form">
+        <div class="contanier">
+            <form id="checkout_form" method="POST" autocomplete="off" name="google-sheet">
+                <select class="form-control" name="options">
+                    <option value="one_iron">أشتري قطعه واحده من مكواه الشعر بسعر 199 درهم</option>
+                    <option value="two_irons">أشتري قطعتين من مكواه الشعر بسعر 380 درهم</option>
+                </select>
+                <div class="form-row">
+                    <div class="input-group">
+                        <div class="name">الاسم كامل</div>
+                        <input required class="form-control form-control-lg" type="text" name="Name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <div class="name">رقم الهاتف</div>
+                        <input required class="form-control form-control-lg" type="number" name="Phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <div class="name">الأمارة</div>
+                        <input required class="form-control form-control-lg" type="text" name="Country">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <div class="name">العنوان بالكامل</div>
+                        <textarea required class="form-control form-control-lg" cols="49" rows="2"
+                            name="Address"></textarea>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="submit" name="submit" class="btn btn-success" value="أشتري ألان" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end checkout form  -->
+
+    <!-- Start google-sheet API -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNTt83ytcVhW_Nr8D7PNzT4vq9x-3OoNyq-_maXvJPHnk6xM1-/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (response.ok) {
+                        open("thankyou.html");
+                    }
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Start google-sheet API -->
+    <!-- End Scripting -->
 
 </body>
 

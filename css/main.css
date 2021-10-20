@@ -11,7 +11,6 @@
 
 body {
   font-family: "Almarai", sans-serif;
-  height: 3000vh;
 }
 
 ul {
@@ -386,6 +385,7 @@ a {
 
 .images_section {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .images_section .images {
@@ -413,4 +413,64 @@ a {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .images_section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .images_section .images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .images_section .images img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  .images_section .contanier button {
+    background-color: black;
+    color: white;
+    width: auto;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+  }
+}
+
 /************************ End image section ************************/
+
+/************************ Start checkout form  ************************/
+
+#checkout_form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+#checkout_form .name {
+  font-size: 1.5em;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.input-group .btn-success {
+  font-size: 20px;
+  padding: 10px 40px;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    width: 85vw;
+  }
+}
+
+/************************ End checkout form  ************************/
