@@ -217,3 +217,200 @@ a {
 }
 
 /************************ End images gif ************************/
+
+/************************ Start offer 1 ************************/
+
+.offer1 {
+  height: 700px;
+  background-color: transparent;
+  background-image: radial-gradient(
+    at bottom center,
+    #212121 26%,
+    #000000d4 100%
+  );
+  position: relative;
+  color: white;
+  margin-top: 30px;
+}
+
+.offer1 .contanier .toflex1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.offer1 .contanier .toflex1 h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.offer1 .img_box,
+.offer2 .img_box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.offer1 img {
+  width: 320px;
+  height: 240px;
+  border-radius: 8px;
+}
+
+.offer1 .img_box ul li {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.offer1 .img_box ul li i {
+  margin-left: 10px;
+  color: #debf91;
+}
+
+.offer1 .contanier .toflex1 button {
+  font-size: 24px;
+  font-weight: 700;
+  width: 680px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .offer1,
+  .offer2 {
+    margin-top: 100px;
+  }
+  .offer1 .img_box ul {
+    margin-top: 10px;
+  }
+  .offer1 .img_box,
+  .offer2 .img_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer1 .contanier .toflex1 button {
+    font-size: 17px;
+    font-weight: 700;
+    width: auto;
+    padding: 5px 5px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+}
+
+/************************ End offer 1 ************************/
+
+/************************ Start offer 2 ************************/
+
+.offer2 {
+  height: 700px;
+  background-color: transparent;
+  background-image: radial-gradient(
+    at bottom center,
+    #284e6a 26%,
+    #000000d4 100%
+  );
+  position: relative;
+  color: white;
+}
+
+.offer2 .img_box p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0 26px;
+  line-height: 1.5;
+}
+
+.offer2 img {
+  width: 360px;
+  height: 270px;
+  border-radius: 8px;
+}
+
+.offer2 .contanier .toflex1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.offer2 .contanier .toflex1 button {
+  font-size: 24px;
+  font-weight: 700;
+  width: 680px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .offer2 {
+    margin-top: 0;
+  }
+  .offer2 .img_box p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  .offer2 .contanier .toflex1 button {
+    font-size: 25px;
+    font-weight: 700;
+    width: auto;
+    padding: 5px 5px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+}
+
+/************************ End offer 2 ************************/
+
+/************************ Start image section ************************/
+
+.images_section {
+  text-align: center;
+}
+
+.images_section .images {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.images_section .images img {
+  width: 32%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.images_section .contanier button {
+  background-color: black;
+  color: white;
+  width: 620px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+/************************ End image section ************************/
