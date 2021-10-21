@@ -124,7 +124,91 @@
     <div class="checkout_form">
         <div class="contanier">
             <form id="checkout_form" method="POST" autocomplete="off" name="google-sheet">
-                <select class="form-control" name="options">
+                <div class="form__cardholder">
+                    <div class="cardholder__card">
+                        <input type="radio" name="offer" id="offer1" value="1" checked>
+                        <img src="images/2.jpg" alt="">
+                        <div class="card__content">
+                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + البطوط الجنتل</p>
+                            <div class="product__num">
+                                <input name="offer1_num" type="number" placeholder="1" min="1" max="4">
+                                <span class="price"> 610.00 EGP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardholder__card">
+                        <input type="radio" name="offer" id="offer2" value="2">
+                        <img src="images/6.jpg" alt="">
+                        <div class="card__content">
+                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + عروسة كيتي</p>
+                            <div class="product__num">
+                                <input name="offer2_num" type="number" placeholder="1" min="1" max="4">
+                                <span class="price">550.00 EGP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardholder__card">
+                        <input type="radio" name="offer" id="offer3" value="3">
+                        <img src="images/1.jpg" alt="">
+                        <div class="card__content">
+                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + مسدس البابلز</p>
+                            <div class="product__num">
+                                <input name="offer3_num" type="number" placeholder="1" min="1" max="4">
+                                <span class="price"> 550.00 EGP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__details">
+                    <div class="customer__details">
+                        <h2>الفوترة والشحن</h2>
+                        <div class="inputgroup">
+                            <div class="name">الاسم كامل</div>
+                            <input required type="text" name="Name">
+                        </div>
+                        <div class="inputgroup">
+                            <div class="name">الهاتف</div>
+                            <input required type="number" name="Phone" value="01">
+                        </div>
+                        <div class="inputgroup">
+                            <div class="name">المحافظة</div>
+                            <input required type="text" name="Country">
+                        </div>
+                        <div class="inputgroup">
+                            <div class="name">العنوان بالكامل</div>
+                            <input required type="text" name="Address"></input>
+                        </div>
+                    </div>
+                    <div class="order__details">
+                        <table>
+                            <h2>طلبك</h2>
+                            <tr>
+                                <th>المجموع</th>
+                                <th>المنتج</th>
+                            </tr>
+                            <tr>
+                                <td class="product-cost">610EGP</td>
+                                <td class="product-name">الصبارة الراقصة + بروچكتور الرسم + البطوط الجنتيل<br>X<span
+                                        class="counter">1</span></td>
+                            </tr>
+                            <tr>
+                                <td>مجاناً</td>
+                                <td>الشحن</td>
+                            </tr>
+                            <tr>
+                                <td class="product-cost" style="border-bottom: none">610EGP</td>
+                                <th style="border-bottom: none">الاجمالى</th>
+                            </tr>
+                        </table>
+                        <div class="cash_on_delivery">
+                            <p>الدفع نقداً عند الاستلام</p>
+                            <p class="cash2"><span></span>الدفع عند التسليم مباشرة</p>
+                        </div>
+                        <input type="submit" name="submit" class="btn" value="أشتري ألان" />
+                    </div>
+                </div>
+                <!-- <select class="form-control" name="options">
                     <option value="one_iron">أشتري قطعه واحده من مكواه الشعر بسعر 199 درهم</option>
                     <option value="two_irons">أشتري قطعتين من مكواه الشعر بسعر 380 درهم</option>
                 </select>
@@ -155,7 +239,7 @@
                 </div>
                 <div class="input-group">
                     <input type="submit" name="submit" class="btn btn-success" value="أشتري ألان" />
-                </div>
+                </div> -->
             </form>
         </div>
     </div>
