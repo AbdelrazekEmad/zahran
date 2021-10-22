@@ -16,9 +16,9 @@ function syncData() {
   counter.innerHTML = userInputNum.value;
   tProductName.innerHTML = cProductname.innerHTML;
   if (cardId === "offer1") {
-    totalCost.innerHTML = `${610 * userInputNum.value}EGP`;
+    totalCost.innerHTML = `${610 * userInputNum.value} EGP`;
   } else {
-    totalCost.innerHTML = `${550 * userInputNum.value}EGP`;
+    totalCost.innerHTML = `${550 * userInputNum.value} EGP`;
   }
   tProCost[0].innerHTML = totalCost.innerHTML;
   tProCost[1].innerHTML = totalCost.innerHTML;
