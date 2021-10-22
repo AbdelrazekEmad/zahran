@@ -598,7 +598,7 @@ table td {
 .order__details .btn {
   width: 100%;
   font-size: 24px;
-  background-color: #61CE70;
+  background-color: #61ce70;
   transition: 200ms ease-in;
   color: white;
   border: none;
@@ -609,7 +609,7 @@ table td {
 }
 
 .order__details .btn:hover {
-  background-color: #68A44D;
+  background-color: #68a44d;
 }
 
 @media (max-width: 768px) {
@@ -632,3 +632,49 @@ table td {
 }
 
 /************************ End checkout form  ************************/
+
+/************************ Start thank u page  ************************/
+
+.body_tu {
+  height: 100vh;
+  background-color: #fff6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanku {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanku .thankicon {
+  width: 90px;
+  height: 67.5px;
+}
+
+.thanku h3 {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.thanku button {
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #419641;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-weight: 400;
+}
+
+.thanku button:hover {
+  font-weight: 400;
+  background-color: #fff6f6;
+  color: #419641;
+  border: solid 2px #419641;
+}
+
+/************************ End thank u page  ************************/

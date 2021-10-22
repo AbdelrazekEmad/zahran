@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happykidsy</title>
+     <!-- tab icon  -->
+     <link rel="shortcut icon" type="image/x-icon" href="images/Iron icon.ico">
     <!-- normalize css Libarary reset all values -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Google Fonts -->
@@ -125,33 +127,36 @@
         <div class="contanier">
             <form id="checkout_form" method="POST" autocomplete="off" name="google-sheet">
                 <div class="form__cardholder">
-                    <div class="cardholder__card">
-                        <input type="radio" name="offer" id="offer1" value="1" checked>
-                        <img src="images/2.jpg" alt="">
+                    <div class="cardholder__card active" id="offer1">
+                        <input type="radio" name="offer" value="1" checked="checked">
+                        <img src="images/2.jpg" alt="offer image">
                         <div class="card__content">
-                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + البطوط الجنتل</p>
+                            <p class="card__name"> <span class="counter">1</span> x الصبارة الراقصة + بروچكتور الرسم +
+                                البطوط الجنتل</p>
                             <div class="product__num">
                                 <input name="offer1_num" type="number" placeholder="1" min="1" max="4">
                                 <span class="price"> 610.00 EGP</span>
                             </div>
                         </div>
                     </div>
-                    <div class="cardholder__card">
-                        <input type="radio" name="offer" id="offer2" value="2">
-                        <img src="images/6.jpg" alt="">
+                    <div class="cardholder__card" id="offer2">
+                        <input type="radio" name="offer" value="2">
+                        <img src="images/6.jpg" alt="offer image">
                         <div class="card__content">
-                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + عروسة كيتي</p>
+                            <p class="card__name"> <span class="counter">1</span> x الصبارة الراقصة + بروچكتور الرسم +
+                                عروسة كيتي</p>
                             <div class="product__num">
                                 <input name="offer2_num" type="number" placeholder="1" min="1" max="4">
                                 <span class="price">550.00 EGP</span>
                             </div>
                         </div>
                     </div>
-                    <div class="cardholder__card">
-                        <input type="radio" name="offer" id="offer3" value="3">
-                        <img src="images/1.jpg" alt="">
+                    <div class="cardholder__card" id="offer3">
+                        <input type="radio" name="offer" value="3">
+                        <img src="images/1.jpg" alt="offer image">
                         <div class="card__content">
-                            <p> <span class="conter">1</span> x الصبارة الراقصة + بروچكتور الرسم + مسدس البابلز</p>
+                            <p class="card__name"> <span class="counter">1</span> x الصبارة الراقصة + بروچكتور الرسم +
+                                مسدس البابلز</p>
                             <div class="product__num">
                                 <input name="offer3_num" type="number" placeholder="1" min="1" max="4">
                                 <span class="price"> 550.00 EGP</span>
@@ -169,7 +174,7 @@
                         </div>
                         <div class="inputgroup">
                             <div class="name">الهاتف</div>
-                            <input required type="number" name="Phone" value="01">
+                            <input required type="text" name="Phone" value="01">
                         </div>
                         <div class="inputgroup">
                             <div class="name">المحافظة</div>
@@ -188,8 +193,8 @@
                                 <th>المنتج</th>
                             </tr>
                             <tr>
-                                <td class="product-cost">610EGP</td>
-                                <td class="product-name">الصبارة الراقصة + بروچكتور الرسم + البطوط الجنتيل<br>X<span
+                                <td class="table_pro_cost">610EGP</td>
+                                <td class="table_pro_name">الصبارة الراقصة + بروچكتور الرسم + البطوط الجنتيل<br>X<span
                                         class="counter">1</span></td>
                             </tr>
                             <tr>
@@ -197,7 +202,7 @@
                                 <td>الشحن</td>
                             </tr>
                             <tr>
-                                <td class="product-cost" style="border-bottom: none">610EGP</td>
+                                <td class="table_pro_cost" style="border-bottom: none">610EGP</td>
                                 <th style="border-bottom: none">الاجمالى</th>
                             </tr>
                         </table>
@@ -208,42 +213,14 @@
                         <input type="submit" name="submit" class="btn" value="أشتري ألان" />
                     </div>
                 </div>
-                <!-- <select class="form-control" name="options">
-                    <option value="one_iron">أشتري قطعه واحده من مكواه الشعر بسعر 199 درهم</option>
-                    <option value="two_irons">أشتري قطعتين من مكواه الشعر بسعر 380 درهم</option>
-                </select>
-                <div class="form-row">
-                    <div class="input-group">
-                        <div class="name">الاسم كامل</div>
-                        <input required class="form-control form-control-lg" type="text" name="Name">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <div class="name">رقم الهاتف</div>
-                        <input required class="form-control form-control-lg" type="number" name="Phone">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <div class="name">الأمارة</div>
-                        <input required class="form-control form-control-lg" type="text" name="Country">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <div class="name">العنوان بالكامل</div>
-                        <textarea required class="form-control form-control-lg" cols="49" rows="2"
-                            name="Address"></textarea>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <input type="submit" name="submit" class="btn btn-success" value="أشتري ألان" />
-                </div> -->
             </form>
         </div>
     </div>
     <!-- end checkout form  -->
+
+    <!-- Start Scripting -->
+    <script src="js.js"></script>
+    <!-- End Scripting -->
 
     <!-- Start google-sheet API -->
     <script>
@@ -263,7 +240,7 @@
     </script>
 
     <!-- Start google-sheet API -->
-    <!-- End Scripting -->
+
 
 </body>
 
